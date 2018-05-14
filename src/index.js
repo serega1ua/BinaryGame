@@ -1,4 +1,20 @@
+//импортируем из других модулей объекты и переменные
+//после обработки в gulp можем объдинить в один js-файла
+//в разных модулях отображение поддерживает пока что только последний FireFox (там флаг надо включить для поддержки)
 import "babel-polyfill";
+import {
+    Fighter
+} from "./fighter.js";
+
+import {
+   ImprovedFighter
+} from "./improvedFighter.js";
+
+import {
+   fight
+} from "./fight.js";
+
+
 
 // create two instances
 	/* name, health, power */
